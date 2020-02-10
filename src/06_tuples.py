@@ -41,6 +41,7 @@ def print_tuple(tuple):
     for i in tuple:
         print(i)
 
+
 t = (1, 2, 5, 7, 99)
 print_tuple(t)  # Prints 1 2 5 7 99, one per line
 
