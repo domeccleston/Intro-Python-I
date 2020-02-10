@@ -28,5 +28,22 @@ it should use today’s date to get the month and year.
 """
 
 import sys
-import calendar
 from datetime import datetime
+import calendar
+
+current_month = datetime.now().month
+
+months = { v: k for k, v in enumerate(calendar.month_name)}
+
+print(months)
+
+if (len(sys.argv) == 1):
+    print(calendar.month(2020, current_month))
+elif (len(sys.argv) == 2):
+    month = sys.argv[1]
+    print(calendar.month(2020, months[month]))
+elif (len(sys.argv) == 3):
+    month = sys.argv[1]
+    print(calendar.month(int(sys.argv[2]), months[month]))
+else:
+    print('Please run the program with the format python3 14_cal.py [month] [year]')
