@@ -11,7 +11,7 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 
 # YOUR CODE HERE
 
-with open('foo.txt', 'r') as foo:
+with open("foo.txt", "r") as foo:
     foo_contents = foo.read()
 
 print(foo_contents)
@@ -24,6 +24,6 @@ print(foo_contents)
 # YOUR CODE HERE
 
 with open('bar.txt', 'w') as bar:
-    bar.write('Hello\n')
-    bar.write('Hello\n')
-    bar.write('Hello\n')
+    bar.write('Line one\n')
+    bar.write('Line two\n')
+    bar.write('Line three\n')

@@ -33,17 +33,15 @@ import calendar
 
 current_month = datetime.now().month
 
-months = {v: k for k, v in enumerate(calendar.month_name)}
-
-print(months)
+months = {v.lower(): k for k, v in enumerate(calendar.month_name)}
 
 if (len(sys.argv) == 1):
     print(calendar.month(2020, current_month))
 elif (len(sys.argv) == 2):
-    month = sys.argv[1]
+    month = sys.argv[1].lower()
     print(calendar.month(2020, months[month]))
 elif (len(sys.argv) == 3):
-    month = sys.argv[1]
+    month = sys.argv[1].lower()
     print(calendar.month(int(sys.argv[2]), months[month]))
 else:
     print(

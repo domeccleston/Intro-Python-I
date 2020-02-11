@@ -8,7 +8,7 @@
 
 
 def f1(a, b):
-    print(a + b)
+    return a + b
 
 
 print(f1(1, 2))
@@ -65,7 +65,8 @@ print(f3(8))     # Should print 9
 
 
 def f4(**kwargs):
-    print(str(kwargs))
+    for k, v in kwargs.items():
+        print(f"key: {k}, value: {v}")
 
 
 # Should print

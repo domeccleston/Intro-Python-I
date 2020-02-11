@@ -16,3 +16,5 @@ def is_even(num):
         print("Odd")
 
 # YOUR CODE HERE
+
+is_even(num)
