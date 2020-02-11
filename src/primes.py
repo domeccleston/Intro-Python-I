@@ -21,7 +21,6 @@ def find_primes(num):
 def sieve(n):
     primes = [True for i in range(n)]
     primes[0] = primes[1] = False
-    
     for i in range(2, int(sqrt(n))):
         for j in range(i * i, n, i):
             primes[j] = False
