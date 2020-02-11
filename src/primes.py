@@ -28,4 +28,7 @@ def sieve(n):
     return [i for i in range(n) if primes[i] is True]
 
 
-print(sieve(20))
+num = int(input("Enter a number.\n"))
+
+print(sieve(num))
+
