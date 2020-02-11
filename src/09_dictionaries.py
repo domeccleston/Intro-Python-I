@@ -51,7 +51,5 @@ waypoints[0]["lon"] = -130
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
 
-for idx, dict in enumerate(waypoints):
-    print(f"{idx}")
-    for key, value in dict.items():
-        print(f"{key}: {value}")
+for dict in waypoints:
+    print(dict['name'], dict['lat'], dict['lon'])
