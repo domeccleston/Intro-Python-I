@@ -38,6 +38,7 @@ months = {v.lower(): k for k, v in enumerate(calendar.month_name)}
 if (len(sys.argv) == 1):
     print(calendar.month(2020, current_month))
 elif (len(sys.argv) == 2):
+    if 
     month = sys.argv[1].lower()
     print(calendar.month(2020, months[month]))
 elif (len(sys.argv) == 3):
